@@ -15,9 +15,6 @@ public class Car {
     @Column(name = "series")
     private int series;
 
-    @OneToOne
-    @JoinColumn(name = "users_id")
-    private User user;
 
     public Car() {
     }
@@ -49,15 +46,6 @@ public class Car {
 
     public void setSeries(int series) {
         this.series = series;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public User setUser(User user) {
-        this.user = user;
-        return user;
     }
 
     @Override
